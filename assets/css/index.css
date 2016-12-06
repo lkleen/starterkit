@@ -14,8 +14,8 @@
   the color scheme to your needs.
   
   - Background:            var(--background-color)
-  - Text:                  var(--text-color);
-  - Hovered Links:         #560bed
+  - Text:                  var(--text-color)
+  - Hovered Links:         var(--hovered-links)
   - Active Button BG:      #4509be
   - Caption BG in projects
     showcase:              rgba(38, 30, 102, .95)
@@ -64,7 +64,8 @@
 
 :root {
 	--background-color: #fffff8;
-	--text-color: #ffff11;
+	--text-color: #00ff11;
+	--hovered-links: #560bed;
 }
 
 /* -----  1.1 Font Definitions  --------------------------------------------- */
@@ -179,7 +180,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #560bed;
+  color: var(--hovered-links);
 }
 
 /* Misc */
