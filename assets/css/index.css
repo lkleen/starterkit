@@ -16,7 +16,7 @@
   - Background:            var(--background-color)
   - Text:                  var(--text-color)
   - Hovered Links:         var(--hovered-links)
-  - Active Button BG:      #4509be
+  - Active Button BG:      var(--active-button-background)
   - Caption BG in projects
     showcase:              rgba(38, 30, 102, .95)
 
@@ -65,7 +65,8 @@
 :root {
 	--background-color: #fffff8;
 	--text-color: #00ff11;
-	--hovered-links: #560bed;
+	--hovered-links: #ff00ff;
+	--active-button-background: #4509be;
 }
 
 /* -----  1.1 Font Definitions  --------------------------------------------- */
@@ -380,8 +381,8 @@ h1 + .intro {
 }
 
 .btn:active {
-  background: #4509be;
-  border-color: #4509be;
+  background: var(--active-button-background);
+  border-color: var(--active-button-background);
 }
 
 /* -----  2.3 Grid & Layout  ------------------------------------------------ */
@@ -463,7 +464,7 @@ h1 + .intro {
 }
 
 .pagination-item:active {
-  background: #4509be;
+  background: var(--active-button-background);
 }
 
 .pagination-item.left {
