@@ -1,0 +1,36 @@
+Title: From plain objects to Hype Driven Development back to plain objects
+
+----
+
+Date: 2016-05-11
+
+----
+
+Coverimage: bild19ICH_ausschnitt.jpg
+
+----
+
+Text: 
+
+## The Beginning
+
+When I initially started as a JAVA-Developer I did hear did read and hear something about J2EE development but I never got a clue what it actually stands for. 
+
+## Kirbytext
+
+Kirby’s content is written Kirbytext by default. It is basically an extended version of [Markdown](https://daringfireball.net/projects/markdown/syntax) or [Markdown Extra](https://michelf.ca/projects/php-markdown/extra/). In addition to Markdown’s simple syntax, Kirbytext also includes a bunch of useful tags. For example, to link to an email address, you can use Kirby’s `email` tag:
+
+<!-- For the following example, left and right parenthesis have been replaced by their HTML entities, so the tag will not get parsed in this article. -->
+
+<pre><code>&#40;email: hello@example.com&#41;</code></pre>
+
+It is not only handier than typing “`<a href="mailto: …`”, but also encodes every character of the provided email address as an HTML entity to make the life of spambots a little harder. You can also define your own Kirbytags and even override the behavior of Kirby’s built-in tags. Your custom tags will be stored within `/site/tags`.
+
+***
+
+**Further reading**
+
+- (link: https://getkirby.com/docs/getting-started text: Getting Started) (Kirby Documentation)
+- (link: https://getkirby.com/docs/content/text text: Formatting text) (Kirby Documentation)
+- (link: https://getkirby.com/docs/cookbook/blog text: Creating a Kirby-powered blog) (Kirby Cookbook)
+- (link: https://getkirby.com/docs/developer-guide/kirbytext/tags text: How to create custom Kirbytags) (Kirby Documentation)

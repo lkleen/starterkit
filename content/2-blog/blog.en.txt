@@ -1,0 +1,9 @@
+Title: Blog
+
+----
+
+Text: Hello welcome bli bla blub
+
+----
+
+Perpage: 1
