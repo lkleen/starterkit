@@ -13,7 +13,7 @@ $disqus_developer = ($disqus_developer) ? 'true' : 'false';
 ?>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-  var disqus_shortname  = '<?php echo $disqus_shortname ?>'; // required: replace example with your forum shortname
+  var disqus_shortname  = '<?php echo $disqus_shortname ?>'; 
   var disqus_title      = '<?php echo html($disqus_title) ?>';
   var disqus_developer  = '<?php echo $disqus_developer ?>'; // developer mode
   var disqus_identifier = '<?php echo $disqus_identifier ?>';
