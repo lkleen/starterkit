@@ -18,9 +18,13 @@
         <?= $page->text()->kirbytext() ?>
       </div>
       
+	  <div class="comments">
+		<?php snippet('disqus', array('disqus_shortname' => 'larsworks')) ?>
+	  </div>
     </article>
     
     <?php snippet('prevnext', ['flip' => true]) ?>
+	
     
   </main>
 
