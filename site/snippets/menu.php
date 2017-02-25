@@ -6,13 +6,4 @@
     </li>
     <?php endforeach ?>
   </ul>
-  <ul class="navigation">
-	<?php foreach($site->languages() as $language): ?>
-    <li class="menu-item<?= e($site->language() == $language, ' is-active')?>" >
-      <a href="<?php echo $page->url($language->code()) ?>">
-        <?php echo html($language->code()) ?>
-      </a>
-    </li>
-    <?php endforeach ?>
-  </ul>
 </nav>
