@@ -4,7 +4,7 @@ Title: About Me
 
 Intro: 
 
-I'm working as a Software Engineer with experience in different areas, ranging from Software development to setting up continuous integration environments. My initial idea to become a software developer dates back to the end of the 90s when I was working in IT-support.  I was often faced with the task to install - not to select - software and drivers of awkward quality on an operating systems which where far beyond the stability of modern operating systems today. 
+I'm working as a Software Engineer with experience in different areas, ranging from Software development to setting up continuous integration environments. My initial idea to become a software developer dates back to the end of the 90s when I was working in IT-support.  I was often faced with the task to install - not to select - software and drivers of awkward quality on an operating systems which where far beyond the stability of modern operating systems today. My daily business often looked like the official (link: https://www.youtube.com/watch?v=IW7Rqwwth84 text: Windows 98 presentation popup: yes).
 
 Friendly customers just let me fix it if a driver installation screwed up their system, sometimes I had to take the blame for pressing the install button in the wrong way. That was the time when the idea grew up to take over control and become a Software developer to create high quality software on my own.
 
