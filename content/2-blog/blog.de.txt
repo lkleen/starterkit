@@ -1,9 +1,0 @@
-Title: Blog
-
-----
-
-Text: Blogs gibts nicht auf deutsch.
-
-----
-
-Perpage: 1

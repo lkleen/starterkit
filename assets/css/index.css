@@ -78,38 +78,38 @@
 
 /* -----  1.1 Font Definitions  --------------------------------------------- */
 
-/* Montserrat */
+/* HeadingsFont */
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/montserrat-700.woff) format("woff");
+  font-family: 'HeadingsFont';
+  src: url(../fonts/Gidolinya-Regular.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/montserrat-400.woff) format("woff");
+  font-family: 'HeadingsFont';
+  src: url(../fonts/Gidolinya-Regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
-/* Vesper Libre */
+/* TextFont */
 @font-face {
-  font-family: 'Vesper Libre';
+  font-family: 'TextFont';
   src: url(../fonts/vesperlibre-400.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Vesper Libre';
+  font-family: 'TextFont';
   src: url(../fonts/vesperlibre-500.woff) format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Vesper Libre';
+  font-family: 'TextFont';
   src: url(../fonts/vesperlibre-700.woff) format("woff");
   font-weight: 700;
   font-style: normal;
@@ -153,7 +153,7 @@ p, ul, ol, figure, pre {
 
 /* Headings */
 h1, h2, h3 {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: HeadingsFont, Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -227,7 +227,7 @@ h1 + hr,
 }
 
 i, em {
-  /* Vesper Libre does not have Italics,
+  /* TextFont does not have Italics,
      so we use a the *medium* weight instead */
   font-weight: 500;
   font-style: normal;
@@ -352,13 +352,13 @@ h1 + .intro {
   background: #e9e9e9;
   border-radius: 4px;
   box-shadow: 0 2px 0 #c9c7d4;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: HeadingsFont, Helvetica, Arial, sans-serif;
   position: relative;
   bottom: 2px;
 }
 
 .text blockquote {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: HeadingsFont, Helvetica, Arial, sans-serif;
   border-left: 2px solid var(--menu-separator);
   padding: .75rem;
   background: var(--blockquote-background);
@@ -376,7 +376,7 @@ h1 + .intro {
   padding: .6em .75em;
   white-space: nowrap;
   font-size: .75em;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: HeadingsFont, Helvetica, Arial, sans-serif;
   line-height: 1;
   font-weight: 400;
 }
@@ -622,7 +622,7 @@ h1 + .intro {
 html {
   background: var(--background-color);
   color: var(--text-color);
-  font: normal 400 1.5em/1.5 "Vesper Libre", Georgia, serif;
+  font: normal 400 1.5em/1.5 "TextFont", Georgia, serif;
   /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
      that does not scroll to a long pager */
@@ -664,7 +664,7 @@ body {
 
 .branding {
   text-align: center;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: HeadingsFont, Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.95rem;
@@ -827,7 +827,7 @@ body {
 .article-more {
   font-size: 75%;
   text-transform: uppercase;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: HeadingsFont, Helvetica, Arial, sans-serif;
   letter-spacing: .025em;
   white-space: nowrap;
   border-bottom: 2px solid var(--link-underline);
