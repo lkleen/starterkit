@@ -60,13 +60,28 @@
   
 */
 
+/* =====  0 Custom Layout  ===================================== */
+
+.navbar {
+  top: 0px;
+  padding-left: 15%;
+  padding-right: 15%;
+  border-bottom: black 1px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  height: 3rem;
+  z-index: 1000;
+
+}
+
 /* =====  1 Global Rules & Definitions  ===================================== */
 
 /* http://paletton.com/#uid=c3A0M431f0keWhEeoHBdlrihmabkf49 */
 
 :root {
-	--background-color: #769FC9;
-	--text-color: #090F15;
+	--background-color: #efefef;
+	--text-color: #540200;
 	--hovered-links: #FFE58C;
 	--link-underline: #D9B57F;
 	--active-button-background: #45ffbe;
@@ -96,21 +111,21 @@
 /* TextFont */
 @font-face {
   font-family: 'TextFont';
-  src: url(../fonts/vesperlibre-400.woff) format("woff");
+  src: url(../fonts/Inconsolata-LGC.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TextFont';
-  src: url(../fonts/vesperlibre-500.woff) format("woff");
+  src: url(../fonts/Inconsolata-LGC.woff) format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TextFont';
-  src: url(../fonts/vesperlibre-700.woff) format("woff");
+  src: url(../fonts/Inconsolata-LGC.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -622,7 +637,7 @@ h1 + .intro {
 html {
   background: var(--background-color);
   color: var(--text-color);
-  font: normal 400 1.5em/1.5 "TextFont", Georgia, serif;
+  font: normal 400 1.2em/1.2 "TextFont", Georgia, serif;
   /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
      that does not scroll to a long pager */
@@ -663,7 +678,7 @@ body {
 }
 
 .branding {
-  text-align: center;
+  text-align: right;
   font-family: HeadingsFont, Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
@@ -684,7 +699,7 @@ body {
     line-height: 3rem;
     margin-bottom: 0;
     white-space: nowrap;
-    text-align: left;
+    text-align: right;
   }
   .branding,
   .navigation {
@@ -696,7 +711,7 @@ body {
 /* -----  3.2 Menu  --------------------------------------------------------- */
 
 .menu {
-  text-align: center;
+  text-align: left;
   font-weight: 500;
 }
 
@@ -722,7 +737,7 @@ body {
 
 @media all and (min-width: 56em) {
   .menu {
-    text-align: right;
+    text-align: left;
   }
 }
 
@@ -785,7 +800,7 @@ body {
 /* -----  3.4 Main Content  ------------------------------------------------- */
 
 .main {
-  padding-top: 3rem;
+  margin-top: 3rem;
   padding-bottom: 1.5rem;
 }
 
