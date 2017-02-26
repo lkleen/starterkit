@@ -75,6 +75,19 @@
 
 }
 
+
+.about_left {
+  width: 50%;
+  float: left;
+}
+
+.about_right {
+  text-align: left;
+  margin-left: 50%;
+  padding-left: 5%;
+  width: 50%;
+}
+
 /* =====  1 Global Rules & Definitions  ===================================== */
 
 /* http://paletton.com/#uid=c3A0M431f0keWhEeoHBdlrihmabkf49 */
@@ -176,14 +189,14 @@ h1 {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1.25;
-  text-align: center;
+  text-align: left;
   margin-bottom: 3rem;
 }
 
 h2 {
   font-size: 1.75rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: left;
 }
 
 h3 {
@@ -286,7 +299,7 @@ figcaption {
 /* -----  2.1 Kirbytext  ---------------------------------------------------- */
 
 .intro {
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   font-size: 1.125rem;
   margin-bottom: 3rem;
