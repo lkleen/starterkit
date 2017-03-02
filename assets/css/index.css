@@ -94,9 +94,9 @@
 
 :root {
 	--background-color: #efefef;
-	--text-color: #540200;
-	--hovered-links: #FFE58C;
-	--link-underline: #D9B57F;
+	--text-color: #36373B;
+	--hovered-links: #CDD5E9;
+	--link-underline: #7E8594;
 	--active-button-background: #45ffbe;
 	--caption-background-in-projects-showcase: #57728E;
 	--marked-text-background: #FFE58C;
@@ -124,21 +124,21 @@
 /* TextFont */
 @font-face {
   font-family: 'TextFont';
-  src: url(../fonts/Inconsolata-LGC.woff) format("woff");
+  src: url(../fonts/Slabo27px-Regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TextFont';
-  src: url(../fonts/Inconsolata-LGC.woff) format("woff");
+  src: url(../fonts/Slabo27px-Regular.woff) format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TextFont';
-  src: url(../fonts/Inconsolata-LGC.woff) format("woff");
+  src: url(../fonts/Slabo27px-Regular.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -187,7 +187,7 @@ h1, h2, h3 {
 
 h1 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   line-height: 1.25;
   text-align: left;
   margin-bottom: 3rem;
@@ -650,7 +650,7 @@ h1 + .intro {
 html {
   background: var(--background-color);
   color: var(--text-color);
-  font: normal 400 1.2em/1.2 "TextFont", Georgia, serif;
+  font: normal 400 1.1em/1.1 "TextFont", Georgia, serif;
   /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
      that does not scroll to a long pager */
@@ -733,10 +733,10 @@ body {
 }
 
 .menu-item:not(:last-child)::after {
-  content: "⁄";
+  content: "|";
   display: inline-block;
-  font-size: .75em;
-  padding: 0 .2em;
+  font-size: .70em;
+  padding: 0.5em;
   color: var(--menu-separator);
 }
 
