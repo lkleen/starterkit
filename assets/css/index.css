@@ -109,14 +109,14 @@
 /* HeadingsFont */
 @font-face {
   font-family: 'HeadingsFont';
-  src: url(../fonts/Gidolinya-Regular.woff) format("woff");
+  src: url(../fonts/Raleway-Light.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HeadingsFont';
-  src: url(../fonts/Gidolinya-Regular.woff) format("woff");
+  src: url(../fonts/Raleway-Light.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
