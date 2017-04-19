@@ -23,7 +23,7 @@ $form = new contactform(array(
       <?php if($form->isError('send')): ?>
       <div class="contactform-alert">The email could not be sent. Please try again later.</div>
       <?php elseif($form->isError()): ?>
-      <div class="contactform-alert">The form could not be submitted. Please fill in all fields correctly.</div>
+      <div class="contactform-alert">The form could not be submitted. Please fill all fields marked with *</div>
       <?php endif ?>
   
       <div class="contactform-field<?php if($form->isError('name')) echo ' error' ?>">
@@ -41,7 +41,7 @@ $form = new contactform(array(
         <textarea class="contactform-input" name="text" id="contactform-text"><?php echo $form->htmlValue('text') ?></textarea>
       </div>
       
-      <p class="contactform-help">All fields with * are required</p>
+      <p class="contactform-help"><small>[*] required fields</small></p>
         
       <input class="contactform-button" type="submit" name="submit" value="Send" />
     

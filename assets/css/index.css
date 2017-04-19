@@ -74,6 +74,8 @@
 	--marked-text-background: #FFE58C;
 	--menu-separator: #1A2735;
 	--blockquote-background: #ffffff;
+  --alert-box-border: #ba6f67;
+  --alert-box-background: #ffd0c6;
 }
 
 /* =====  0 Custom Layout  ===================================== */
@@ -111,15 +113,36 @@
   display: inline-block;
   width: 35%;
   vertical-align: top;
+  box-sizing: border-box;
 }
 
 .contactform-input {
   display: inline-block;
-  width: 60%;
+  width: 64%;
   padding: 0.5rem;
   border: 1px solid var(--hovered-links);
   border-radius: 0.3rem;
+  box-sizing: border-box;
 }
+
+.contactform-help {
+  display: block;
+}
+
+#contactform-text {
+  resize: none;
+  height: 8rem;
+}
+
+.contactform-alert {
+  border: 1px solid var(--alert-box-border);
+  background: var(--alert-box-background);
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding: 0.1rem;
+}
+
 
 /* -----  1.1 Font Definitions  --------------------------------------------- */
 
