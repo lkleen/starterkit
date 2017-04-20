@@ -22,21 +22,19 @@ $form = new contactform(array(
     
       <?php if($form->isError('send')): ?>
       <div class="contactform-alert">The email could not be sent. Please try again later.</div>
-      <?php elseif($form->isError()): ?>
-      <div class="contactform-alert">The form could not be submitted. Please fill all fields marked with *</div>
       <?php endif ?>
   
-      <div class="contactform-field<?php if($form->isError('name')) echo ' error' ?>">
+      <div class="contactform-field<?php if($form->isError('name')) echo ' error'; else echo ' default';?>">
         <label class="contactform-label" for="contactform-name">Name <?php if($form->isRequired('name')) echo '*' ?> <?php if($form->isError('name')): ?><small>Please enter a name</small><?php endif ?></label>
         <input class="contactform-input" type="text" id="contactform-name" name="name" value="<?php echo $form->htmlValue('name') ?>" />
       </div>
   
-      <div class="contactform-field<?php if($form->isError('email')) echo ' error' ?>">
+      <div class="contactform-field<?php if($form->isError('email')) echo ' error'; else echo ' default';?>">
         <label class="contactform-label" for="contactform-email">Email adresse <?php if($form->isRequired('email')) echo '*' ?> <?php if($form->isError('email')): ?><small>Please enter a valid email address</small><?php endif ?></label>
         <input class="contactform-input" type="text" id="contactform-email" name="email" value="<?php echo $form->htmlValue('email') ?>" />
       </div>
   
-      <div class="contactform-field<?php if($form->isError('text')) echo ' error' ?>">
+      <div class="contactform-field<?php if($form->isError('text')) echo ' error'; else echo ' default';?>">
         <label class="contactform-label" for="contactform-text">Text <?php if($form->isRequired('text')) echo '*' ?> <?php if($form->isError('text')): ?><small>Please enter your text</small><?php endif ?></label>
         <textarea class="contactform-input" name="text" id="contactform-text"><?php echo $form->htmlValue('text') ?></textarea>
       </div>

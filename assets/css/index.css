@@ -66,6 +66,7 @@
 
 :root {
 	--background-color: #efefef;
+  --background-color-input: #ffffff;
 	--text-color: #36373B;
 	--hovered-links: #CDD5E9;
 	--link-underline: #7E8594;
@@ -77,72 +78,6 @@
   --alert-box-border: #ba6f67;
   --alert-box-background: #ffd0c6;
 }
-
-/* =====  0 Custom Layout  ===================================== */
-
-.navbar {
-  top: 0px;
-  padding-left: 15%;
-  padding-right: 15%;
-  border-bottom: black 1px;
-  position: fixed;
-  background: white;
-  width: 100%;
-  height: 3rem;
-  z-index: 1000;
-
-}
-
-.about_left {
-  width: 50%;
-  float: left;
-}
-
-.about_right {
-  text-align: left;
-  margin-left: 50%;
-  padding-left: 5%;
-  width: 50%;
-}
-
-.contactform-field {
-  height: 3rem;
-}
-
-.contactform-label {
-  display: inline-block;
-  width: 35%;
-  vertical-align: top;
-  box-sizing: border-box;
-}
-
-.contactform-input {
-  display: inline-block;
-  width: 64%;
-  padding: 0.5rem;
-  border: 1px solid var(--hovered-links);
-  border-radius: 0.3rem;
-  box-sizing: border-box;
-}
-
-.contactform-help {
-  display: block;
-}
-
-#contactform-text {
-  resize: none;
-  height: 8rem;
-}
-
-.contactform-alert {
-  border: 1px solid var(--alert-box-border);
-  background: var(--alert-box-background);
-  box-sizing: border-box;
-  border-radius: 0.3rem;
-  margin-bottom: 0.3rem;
-  padding: 0.1rem;
-}
-
 
 /* -----  1.1 Font Definitions  --------------------------------------------- */
 
@@ -1033,4 +968,78 @@ body {
   .contact-twitter p:not(:first-of-type) {
     width: 33.33%;
   }
+}
+
+/* =====  5. Custom Layout  ===================================== */
+
+.navbar {
+  top: 0px;
+  padding-left: 15%;
+  padding-right: 15%;
+  border-bottom: black 1px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  height: 3rem;
+  z-index: 1000;
+
+}
+
+.about_left {
+  width: 50%;
+  float: left;
+}
+
+.about_right {
+  text-align: left;
+  margin-left: 50%;
+  padding-left: 5%;
+  width: 50%;
+}
+
+.contactform-field input,textarea {
+  height: 2rem;
+  margin: 0.2rem 0.0rem 0.8rem 0.0rem;
+}
+
+.contactform-field label {
+  background: var(--background-color);
+}
+
+.contactform-field.error label {
+  background: var(--alert-box-background);
+}
+
+.contactform-label {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.contactform-input {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--hovered-links);
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+
+.contactform-help {
+  display: block;
+}
+
+#contactform-text {
+  resize: none;
+  height: 8rem;
+}
+
+.contactform-alert {
+  border: 1px solid var(--alert-box-border);
+  background: var(--alert-box-background);
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding: 0.1rem;
 }
