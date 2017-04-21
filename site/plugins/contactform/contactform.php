@@ -38,7 +38,7 @@ class ContactForm extends Submission {
     
       // send the email form, pass all options            
       $send = email($self->options);
-  
+
       if(error($send)) {
         $self->addInvalid('send');
         return $self->trigger('error');

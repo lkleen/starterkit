@@ -1,0 +1,80 @@
+Title: How to debug PHP
+
+----
+
+Coverimage: var_dump_output.jpg
+
+----
+
+Date: 2017-04-21
+
+----
+
+Text: 
+
+While setting up this website initially I was in the need of a debugger 
+which allows to set breakpooints and inspect values at runtime.
+
+# Motivation
+
+My contact form of my kirby CMS did not work as intended. When pressing the send button
+the following error message appeared.
+
+(image: contactform-error.jpg)
+
+So lets have a look to the $send variable
+
+(image: var_dump_output.jpg)
+
+Well, the missing error method evaluates the $send variable
+to check if is has been send. But I really don't want to read this mess.
+
+# Solution
+
+Use an IDE with debugging capabilities. 
+
+In the following examples the php project to debug is loacted in 
+
+```
+/Users/<user>/workspace/<project_name>
+```
+
+## Prequisity: webserver with debugging support
+### Xampp (win)
+Install xampp and follow the instructions at: https://gist.github.com/odan/1abe76d373a9cbb15bed
+Make sure there is no error message in the apache error.log. There is no other warning if it fails to load.
+(note: when using php 7.0 the line with the zend_extension must be adapted to  php_xdebug-2.4.0-7.0-vc14.dll
+
+or
+
+download and extract (bundle.zip) to c:\xampp
+
+## Eclipse PDT (free)
+
+download and run 
+https://eclipse.org/pdt/#download
+
+set the workspace location to 
+```
+/Users/<user>/workspace/
+```
+
+### Setup PHP project
+file -> new -> PHP project
+- 'Create new project in workaspace' project name: <project_name> (it must match your project folder name)
+- finish
+
+(image: eclipse_create_project.jpg)
+
+### setup run configuration
+right click project -> Rus As -> Run configurations...
+(image: run_configurations.gif)
+
+
+
+
+## PhpStorm
+
+http://www.jetbrains.com/phpstorm/download
+
+commercial
