@@ -2,7 +2,7 @@ Title: How to debug PHP
 
 ----
 
-Coverimage: var_dump_output.jpg
+Coverimage: debug_session.gif
 
 ----
 
@@ -27,7 +27,7 @@ So lets have a look to the $send variable
 (image: var_dump_output.jpg)
 
 Well, the missing error method evaluates the $send variable
-to check if is has been send. But I really don't want to read this mess.
+to check if it has been send. But I really don't want to read this mess.
 
 # Solution
 
@@ -40,14 +40,25 @@ In the following examples the php project to debug is loacted in
 ```
 
 ## Prequisity: webserver with debugging support
-### Xampp (win)
-Install xampp and follow the instructions at: https://gist.github.com/odan/1abe76d373a9cbb15bed
+Note: The installation and configuration of the debugging support for PHP is very awkward. 
+
+### Option 1: preconfigured Xampp with xdebug (xampp 3.2.2 with PHP 7.0.x)
+download and extract https://github.com/lkleen/starterkit/blob/master/downloads/xampp/xampp-with-xdebug.zip to c:\xampp
+You will need to adapt the DocumentRoot in httpd.conf. eg.
+```
+DocumentRoot "C:/Users/<user>/workspace/<project>"
+<Directory "C:/Users/<user>/workspace/<project>">
+    Options Indexes FollowSymLinks Includes ExecCGI
+    AllowOverride All
+    Require all granted
+</Directory>
+```
+
+
+### Option 2: Manual Xampp installation procedure (win)
+Follow the instructions at: https://gist.github.com/odan/1abe76d373a9cbb15bed
 Make sure there is no error message in the apache error.log. There is no other warning if it fails to load.
 (note: when using php 7.0 the line with the zend_extension must be adapted to  php_xdebug-2.4.0-7.0-vc14.dll
-
-or
-
-download and extract (bundle.zip) to c:\xampp
 
 ## Eclipse PDT (free)
 
@@ -56,8 +67,9 @@ https://eclipse.org/pdt/#download
 
 set the workspace location to 
 ```
-/Users/<user>/workspace/
+C:/Users/<user>/workspace/
 ```
+(image: workspace_directory.gif)
 
 ### Setup PHP project
 file -> new -> PHP project
@@ -70,8 +82,23 @@ file -> new -> PHP project
 right click project -> Rus As -> Run configurations...
 (image: run_configurations.gif)
 
+create new run configuration
+(image: new_run_configuration.gif)
 
+configure 'Default PHP Web Server' to use XDebug
+(image: configure_webserver_xdebug.gif)
 
+Set a breakpoint in the entry point file. Usually index.php
+Open http://localhost in a webbrowser. Page loading will be interrupted at the breakpoint.
+All PHP Globals should be visible in the debugger at this point.
+
+(image: debug_view_main.gif)
+
+Page load can be continued with the resume (F8) button.
+I could now set a breakpoint at the contact form script where it is actually failing 
+reproduce the error and get a closer look to the $send variable
+
+(image: debug_session.gif)
 
 ## PhpStorm
 
