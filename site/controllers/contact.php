@@ -36,9 +36,9 @@ return function($site, $pages, $page) {
 
       // build the email
       $email = email(array(
-        'to'      => 'bastian@getkirby.com',
-        'from'    => 'contactform@getkirby.com',
-        'subject' => 'New contact request',
+        'to'      => 'lars@kleen.email',
+      	'from'    => $data['email'],
+        'subject' => $data['name'] . ': New contact request',
         'replyTo' => $data['email'],
         'body'    => $body
       ));
