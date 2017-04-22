@@ -2,38 +2,55 @@
 
   <main class="main" role="main">
 
-    <h1><?php echo $page->title()->html() ?></h1>
+    <h1>
+      <header class="wrap">
+      <?php echo $page->title()->html() ?>
+      </header>
+    </h1>
 
-    <form method="post">
+    <div class="text wrap">
+      <section id="contactform">
 
-      <?php if($alert): ?>
-      <div class="alert">
-        <ul>
-          <?php foreach($alert as $message): ?>
-          <li><?php echo html($message) ?></li>
-          <?php endforeach ?>
-        </ul>
-      </div>
-      <?php endif ?>
+        <?php if($alert): ?>
+          <div class="contactform-alert">
+            <ul>
+              <?php foreach($alert as $message): ?>
+              <li><?php echo html($message) ?></li>
+              <?php endforeach ?>
+            </ul>
+          </div>
+        <?php endif ?>
+        
+        <?php
+	        // fill values with previously posted form data  
+        	$name  = isset($GLOBALS['_POST']['name'])  ? $GLOBALS['_POST']['name']  : "";
+        	$email = isset($GLOBALS['_POST']['email']) ? $GLOBALS['_POST']['email'] : "";
+        	$text  = isset($GLOBALS['_POST']['text'])  ? $GLOBALS['_POST']['text']  : "";
+        ?>
 
-      <div class="field">
-        <label for="name">Name <abbr title="required">*</abbr></label>
-        <input type="text" id="name" name="name">
-      </div>
+        <form method="post">
 
-      <div class="field">
-        <label for="email">Email <abbr title="required">*</abbr></label>
-        <input type="email" id="email" name="email" required>
-      </div>
+          <div class="contactform-field">
+            <label class="contactform-label" for="contactform-name">Name <abbr title="required">*</abbr></label>
+            <input class="contactform-input" type="text" id="contactform-name" name="name" value="<?php echo $name;?>"/>
+          </div>
 
-      <div class="field">
-        <label for="text">Text <abbr title="required">*</abbr></label>
-        <textarea id="text" name="text" required></textarea>
-      </div>
+          <div class="contactform-field">
+            <label class="contactform-label" for="contactform-email">Email <abbr title="required">*</abbr></label>
+            <input class="contactform-input" type="text" id="contactform-email" name="email" value="<?php echo $email;?>" required/>
+          </div>
 
-      <input type="submit" name="submit" value="Submit">
+          <div class="contactform-field">
+            <label class="contactform-label" for="contactform-text">Text <abbr title="required">*</abbr></label>
+            <textarea class="contactform-input" name="text" id="contactform-text"><?php echo $text;?></textarea>
+          </div>
 
-    </form>
+          <input class="contactform-button" type="submit" name="submit" value="Submit">
+
+        </form>
+
+      </section>
+    </div>
 
   </main>
 
