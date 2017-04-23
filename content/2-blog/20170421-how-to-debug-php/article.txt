@@ -14,7 +14,7 @@ Text:
 
 While the output of a var_dump might be sufficient for small PHP projects it is essential to get a better insight as soon as the project is getting more complex. For me this was the case when I was implementing the contact form for this website (which is based on kirby CMS). My first step was to output a var_dump:
 
-(image: var_dump_output.jpg)
+(image: var_dump_output.jpg link: self)
 
 Despite it is not very human readable I can just output the state of the variable. Without a debugger there is no other way to investigate how the state was generated but to add more var_dumps.
 
@@ -60,32 +60,32 @@ set the workspace location to
 C:/Users/<user>/workspace/
 ```
 
-(image: workspace_dir.gif)
+(image: workspace_dir.gif link: self)
 
 ### Setup PHP project
 file -> new -> PHP project
 - 'Create new project in workaspace' project name: <project_name> (it must match your project folder name)
 - finish
 
-(image: eclipse_create_project.jpg)
+(image: eclipse_create_project.jpg link: self)
 
 ### setup run configuration
 right click project -> Rus As -> Run configurations...
-(image: run_configurations.gif)
+(image: run_configurations.gif link: self)
 
 create new run configuration
-(image: new_run_configuration.gif)
+(image: new_run_configuration.gif link: self)
 
 configure 'Default PHP Web Server' to use XDebug
-(image: configure_webserver_xdebug.gif)
+(image: configure_webserver_xdebug.gif link: self)
 
 Set a breakpoint in the entry point file. Usually index.php
 Open http://localhost in a webbrowser. Page loading will be interrupted at the breakpoint.
 All PHP Globals should be visible in the debugger at this point.
 
-(image: debug_view_main.gif)
+(image: debug_view_main.gif link: self)
 
 Page load can be continued with the resume (F8) button.
 I could now set a breakpoint at the contact form script where it is actually failing, reproduce the error and get a closer look at the $send variable and its generation.
 
-(image: debug_session.gif)
+(image: debug_session.gif link: self)

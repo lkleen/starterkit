@@ -1,0 +1,3 @@
+Title: Eclipse PDT Debug session
+----
+Caption: The debug view allows to set breakpoint and to inspect values at runtime.
