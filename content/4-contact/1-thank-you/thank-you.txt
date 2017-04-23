@@ -1,0 +1,9 @@
+...
+pages: site
+...
+
+Title: Thank You
+
+----
+
+Text: Your request has been submitted successfully.

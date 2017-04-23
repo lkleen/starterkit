@@ -1,4 +1,4 @@
-Title: How to debug PHP
+Title: Debugging PHP with xampp, xdebug and Eclipse PDT
 
 ----
 
@@ -12,35 +12,18 @@ Date: 2017-04-21
 
 Text: 
 
-While setting up this website initially I was in the need of a debugger 
-which allows to set breakpooints and inspect values at runtime.
-
-# Motivation
-
-My contact form of my kirby CMS did not work as intended. When pressing the send button
-the following error message appeared.
-
-(image: contactform-error.jpg)
-
-So lets have a look to the $send variable
+While the output of a var_dump might be sufficient for small PHP projects it is essential to get a better insight as soon as the project is getting more complex. For me this was the case when I was implementing the contact form for this website (which is based on kirby CMS). My first step was to output a var_dump:
 
 (image: var_dump_output.jpg)
 
-Well, the missing error method evaluates the $send variable
-to check if it has been send. But I really don't want to read this mess.
+Despite it is not very human readable I can just output the state of the variable. Without a debugger there is no other way to investigate how the state was generated but to add more var_dumps.
 
-# Solution
-
-Use an IDE with debugging capabilities. 
-
-In the following examples the php project to debug is loacted in 
-
-```
-/Users/<user>/workspace/<project_name>
-```
+# How to setup debugging support
 
 ## Prequisity: webserver with debugging support
-Note: The installation and configuration of the debugging support for PHP is very awkward. 
+
+In the following example I'm not describing the setup of the xampp and xdbug in detail. 
+I've prepared an out-of-the box xampp-xdebug bundle for windows and linked to a good description how to set it up.
 
 ### Option 1: preconfigured Xampp with xdebug (xampp 3.2.2 with PHP 7.0.x)
 download and extract https://github.com/lkleen/starterkit/blob/master/downloads/xampp/xampp-with-xdebug.zip to c:\xampp
@@ -60,7 +43,13 @@ Follow the instructions at: https://gist.github.com/odan/1abe76d373a9cbb15bed
 Make sure there is no error message in the apache error.log. There is no other warning if it fails to load.
 (note: when using php 7.0 the line with the zend_extension must be adapted to  php_xdebug-2.4.0-7.0-vc14.dll
 
-## Eclipse PDT (free)
+## Eclipse PDT
+
+In the following examples the php project to debug is loacted in 
+
+```
+C:/Users/<user>/workspace/<project_name>
+```
 
 download and run 
 https://eclipse.org/pdt/#download
@@ -95,13 +84,6 @@ All PHP Globals should be visible in the debugger at this point.
 (image: debug_view_main.gif)
 
 Page load can be continued with the resume (F8) button.
-I could now set a breakpoint at the contact form script where it is actually failing 
-reproduce the error and get a closer look to the $send variable
+I could now set a breakpoint at the contact form script where it is actually failing, reproduce the error and get a closer look at the $send variable and its generation.
 
 (image: debug_session.gif)
-
-## PhpStorm
-
-http://www.jetbrains.com/phpstorm/download
-
-commercial
