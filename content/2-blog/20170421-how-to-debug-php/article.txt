@@ -55,10 +55,12 @@ download and run
 https://eclipse.org/pdt/#download
 
 set the workspace location to 
+
 ```
 C:/Users/<user>/workspace/
 ```
-(image: workspace_directory.gif)
+
+(image: workspace_dir.gif)
 
 ### Setup PHP project
 file -> new -> PHP project
