@@ -20,12 +20,12 @@ Despite it is not very human readable I can just output the state of the variabl
 
 # How to setup debugging support
 
-## Prequisity: webserver with debugging support
+## Prequisity: Webserver with debugging support
 
 In the following example I'm not describing the setup of the xampp and xdbug in detail. 
 I've prepared an out-of-the box xampp-xdebug bundle for windows and linked to a good description how to set it up.
 
-### Option 1: preconfigured Xampp with xdebug (xampp 3.2.2 with PHP 7.0.x)
+### Option 1: Preconfigured Xampp with xdebug (xampp 3.2.2 with PHP 7.0.x)
 download and extract https://github.com/lkleen/starterkit/blob/master/downloads/xampp/xampp-with-xdebug.zip to c:\xampp
 You will need to adapt the DocumentRoot in httpd.conf. eg.
 ```
@@ -41,7 +41,7 @@ DocumentRoot "C:/Users/<user>/workspace/<project>"
 ### Option 2: Manual Xampp installation procedure (win)
 Follow the instructions at: https://gist.github.com/odan/1abe76d373a9cbb15bed
 Make sure there is no error message in the apache error.log. There is no other warning if it fails to load.
-(note: when using php 7.0 the line with the zend_extension must be adapted to  php_xdebug-2.4.0-7.0-vc14.dll
+(note: when using php 7.0 the line with the zend_extension must be adapted to  php_xdebug-2.4.0-7.0-vc14.dll)
 
 ## Eclipse PDT
 
@@ -74,7 +74,7 @@ right click project -> Rus As -> Run configurations...
 (image: run_configurations.gif link: self)
 
 create new run configuration
-(image: new_run_configuration.gif link: self)
+(image: new_run_configuration.gif link: self imgclass: blog-image)
 
 configure 'Default PHP Web Server' to use XDebug
 (image: configure_webserver_xdebug.gif link: self)

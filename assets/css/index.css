@@ -72,7 +72,7 @@
 	--link-underline: #7E8594;
 	--active-button-background: #45ffbe;
 	--caption-background-in-projects-showcase: #57728E;
-	--marked-text-background: #FFE58C;
+	--marked-text-background: #bdbdbd;
 	--menu-separator: #1A2735;
 	--blockquote-background: #ffffff;
   --alert-box-border: #ba6f67;
@@ -995,6 +995,11 @@ body {
   margin-left: 50%;
   padding-left: 5%;
   width: 50%;
+}
+
+.blog-image {
+  width: initial;
+  max-width: 100%;
 }
 
 .contactform-field input,textarea {
