@@ -4,8 +4,12 @@ Title: About
 
 Intro: 
 
-I'm a Software Engineer developing the Audio Engine for (link: https://www.steinberg.net/de/products/cubase/start.html text: Cubase popup: yes) and (link: https://www.steinberg.net/de/products/nuendo/start.html text: Nuendo popup: yes) at (link: https://www.steinberg.net/de/home.html text: Steinberg Media Technologies GmbH popup: yes).
+I'm working as the Technical Lead Engines  at (link: https://www.steinberg.net/de/home.html text: Steinberg Media Technologies GmbH popup: yes). 
 
 My initial idea to become a software developer dates back to the end of the 90s when I was working as a self-employed IT-supporter.  A regular task was to install software and drivers of awkward quality on operating systems which where far beyond the stability of modern operating systems today. My daily business often felt like the official (link: https://www.youtube.com/watch?v=IW7Rqwwth84 text: Windows 98 presentation popup: yes).
 
-Still influenced by these early experiences my passion is to build software which does not frustrates the users or other developers. 
+Still influenced by these early experiences my passion is to build software which does not frustrates users as well as other developers.
+
+----
+
+Text: 
