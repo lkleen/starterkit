@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0324d5cc-34ee-4023-9178-1d1da22d5746" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/content/3-about/about.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/3-about/lasrworks_about_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/4-contact/1-thank-you/contact.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/4-contact/1-thank-you/thank-you.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/4-contact/contact.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/4-contact/docs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/4-contact/forum.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/4-contact/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/1-project-b/project.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/1-project-b/room.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/1-project-b/table.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/2-project-c/camera.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/2-project-c/project.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/3-project-d/letters.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/3-project-d/project.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/4-project-e/project.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/4-project-e/typewriter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/project-a/closeup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/project-a/closeup.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/project-a/creative-tools.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/project-a/creative-tools.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/project-a/folding-rule.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/project-a/folding-rule.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/project-a/project.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/projects/projects.txt" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/kirby/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\LARS-DESKTOP\workspace\kirby-starterkit\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="53c1ac9a-8ad9-46e1-881b-7ee61fddf076" name="localhost" />
+      <server host="IntelliJ IDEA 2019.2.3" id="afba4bed-1a44-4545-9b97-24333822c6ff" name="IntelliJ IDEA 2019.2.3" port="63342" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/kirby/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/kirby/vendor/getkirby/toolkit" />
+      <path value="$PROJECT_DIR$/kirby/vendor/getkirby/smartypants" />
+      <path value="$PROJECT_DIR$/kirby/vendor/composer" />
+      <path value="$PROJECT_DIR$/kirby/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/kirby/vendor/erusev/parsedown-extra" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1RgWgKVm4AUHGjudoJCZuSonwsz" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="localhost">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0324d5cc-34ee-4023-9178-1d1da22d5746" name="Default Changelist" comment="" />
+      <created>1570089329888</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570089329888</updated>
+      <workItem from="1570089331612" duration="540000" />
+      <workItem from="1570090031459" duration="416000" />
+      <workItem from="1570090946654" duration="3506000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

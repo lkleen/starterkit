@@ -3,6 +3,8 @@
 
 Icon
 .DS_Store
+.idea
+.project
 
 # Temporary files
 # ---------------

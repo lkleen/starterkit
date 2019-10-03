@@ -4,7 +4,7 @@ Title: About
 
 Intro: 
 
-I'm working as the Technical Lead Engines  at (link: https://www.steinberg.net/de/home.html text: Steinberg Media Technologies GmbH popup: yes). 
+I'm working as the Technical Lead Engines at (link: https://www.steinberg.net/de/home.html text: Steinberg Media Technologies GmbH popup: yes). 
 
 My initial idea to become a software developer dates back to the end of the 90s when I was working as a self-employed IT-supporter.  A regular task was to install software and drivers of awkward quality on operating systems which where far beyond the stability of modern operating systems today. My daily business often felt like the official (link: https://www.youtube.com/watch?v=IW7Rqwwth84 text: Windows 98 presentation popup: yes).
 
